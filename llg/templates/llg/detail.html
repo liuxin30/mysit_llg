@@ -3,14 +3,14 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-6 col-md-2"></div>
-        <div class="col-xs-6 col-md-8">
-            <img src="{{ article.image.url }}" style="height: 200px; width: 100%; display: block;">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-md-8">
+            <img src="{{ article.image.url }}" style="height: auto; width: auto; display: block;margin: 0 auto;">
             <h3>{{ article.title }}</h3>
             <p>{{ article.category }}</p>
             <p>{{ article.content|safe }}</p>
         </div>
-        <div class="col-xs-6 col-md-2"></div>
+        <div class="col-md-2"></div>
     </div>
 </div>
 {% endblock %}
